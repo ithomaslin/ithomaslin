@@ -56,6 +56,10 @@ a {
 	text-decoration: none;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 #header h1, #pixels{
 	color: #48941A;
 }
@@ -90,6 +94,14 @@ a {
 	margin: 0 0 15px 0;	
 }
 
+#navbar {
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    top: 0;
+}
+
 .navbar {
 	margin-bottom: 0;
 	padding-bottom: 0;
@@ -102,51 +114,53 @@ a {
 #intro{
 	background:url("https://dl.dropboxusercontent.com/u/5753236/white-gra-bg.png") 50% 0 no-repeat fixed;
 	color: #272822;
-	height: 600px;
-	margin: 0 auto;
+	height: 700px;
+	margin: 0;
 	padding: 0;
 }
 
+#intro p {
+    color: #272822;
+    font-size: 20px;
+}
+
+#head {
+    background: url('https://dl.dropboxusercontent.com/u/5753236/jseyes.png') no-repeat;
+    height:500px;
+    width: 350px;
+    margin-left: 500px;
+    margin-top: 100px;
+}
+
 #second{
-	background: url("https://dl.dropboxusercontent.com/u/5753236/HiRes.png") 50% 0 no-repeat fixed;
+	background: url("https://dl.dropboxusercontent.com/u/5753236/HiRes.jpg") no-repeat fixed;
 	color: #272822;
 	height: 100%;
-	margin: 0 auto;
+	margin: 0;
 	overflow: hidden;
 	padding: 0;
 }
 
-#second .key-1{
-	height: 1000px;
-	margin: 0 auto;
-	padding: 0;
-	position: absolute;
-	width: 900px;
-	z-index: 0;
-}
-
-#second .key-1-img {
-	margin-left: 90%;
-	margin-top: 2%;
-}
-
-#second .key-2-img {
-	margin-left: 95%;
-	margin-top:-10px;
-	padding: 0;
-}
-
 #third{
-	background: url("https://dl.dropboxusercontent.com/u/5753236/Elementary.jpg") 50% 0 no-repeat fixed;
+	background: url("https://dl.dropboxusercontent.com/u/5753236/1771777_HiRes.jpg") 50% 0 no-repeat fixed;
 	color: #272822;
-	height: 650px;
-	padding: 100px 0 0 0;	
+	height: 1000px;
+	padding: 0;
+    margin: 0;	
+}
+
+#fourth{
+    background: url("https://dl.dropboxusercontent.com/u/5753236/Elementary.jpg") 50% 0 no-repeat fixed;
+    color: #272822;
+    height: 600px;
+    padding: 0;
+    margin: 0;  
 }
 
 #fifth{
 	height: 400px;
-	margin: 0 auto;
-	padding: 40px 0 0 0;
+	margin: 0;
+	padding: 0;
 }
 
 .story{
@@ -162,16 +176,10 @@ a {
 	width: 400px;	
 }
 
-.ss-links{
-	position: fixed;
-	left: 10px;
-	top: 700px;
-	width: 25%;
-	z-index: 100;
-}
 .ss-links a{
 	background: rgba(0,0,0,0.2);
 	font-size: 16px;
+    color: #34495e;
 	width: 40px;
 	height: 40px;
 	line-height: 40px;
@@ -186,8 +194,11 @@ a {
 	-ms-transition: background 0.2s linear;
 	transition: background 0.2s linear;
 }
+
 .ss-links a:hover{
 	background: rgba(0,0,0,0.4);
+    text-decoration: none;
+    color: #e74c3c;
 }
 
 .ss-container{
@@ -196,7 +207,8 @@ a {
     text-align: left;
     float: left;
     overflow: hidden;
-    padding-bottom: 500px;
+    padding-bottom: 0;
+    padding-top: 100px;
 }
 
 .ss-container:before{
@@ -287,7 +299,6 @@ a {
     height: 0px;
     border-bottom: 5px dotted #ddd;
     border-bottom: 5px dotted rgba(17, 17, 22, 0.3);
-    box-shadow: 0px 1px 1px #fff;
     position: absolute;
     top: 50%;
     content: '';
@@ -344,11 +355,11 @@ a {
     display: block;
 }
 .ss-container h3 a:hover{
-    color: rgba(255,255,255,1);
+    color: #e74c3c;
 }
 
 .ss-circle-1{
-    background-image:url(../images/1.jpg);
+    background-image:url('https://dl.dropboxusercontent.com/u/5753236/baby_img.png');
 }
 .ss-circle-2{
     background-image: url(../images/2.jpg);
@@ -356,6 +367,13 @@ a {
 .ss-circle-3{
     background-image: url(../images/3.jpg);
 }
-.ss-circle-22{
-	background-image: url("https://dl.dropboxusercontent.com/u/5753236/military_img.png");
+.ss-circle-9{
+    background-image: url("https://dl.dropboxusercontent.com/u/5753236/military_img.png");
+}
+.ss-circle-16{
+    background-image: url("https://dl.dropboxusercontent.com/u/5753236/Seekr.png");
+}
+
+.blog {
+    margin-top: 50px;
 }

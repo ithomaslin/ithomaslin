@@ -1,4 +1,4 @@
-<nav class="navbar navbar-static-top navbar-default" role="navigation">
+<nav id="navbar" class="navbar navbar-static-top navbar-default" role="navigation">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -12,10 +12,15 @@
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse navbar-ex1-collapse">
+    <div class="collapse navbar-collapse navbar-ex1-collapse bs-js-navbar-scrollspy">
+        <div id="ss-links" class="ss-links">
+          <a href="#intro" title="About Me" data-placement="bottom"><span class="glyphicon glyphicon-user"></span></a>
+          <a href="#second" title="Timeline" data-placement="bottom"><span class="glyphicon glyphicon-film"></span></a>
+          <a href="#third" title="Contact Me" data-placement="bottom"><span class="glyphicon glyphicon-envelope"></span></a>
+        </div>
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Home", root_path %></li>
-        <li><%= link_to "Blog", blog_path %></li>
+        <li style="font-weight: 900;"><%= link_to "Home", root_path, { :class=>("glow-me") } %></li>
+        <li style="font-weight: 900;"><%= link_to "Blog", blog_path, { :class=>("glow-me") } %></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div>

@@ -69,7 +69,7 @@
 						// if perspective add css
 						if( perspective ) {
 							$rows.css({
-								'-webkit-perspective'			: 1000,
+								'-webkit-perspective'			: 600,
 								'-webkit-perspective-origin'	: '50% 0%'
 							});
 						}
@@ -285,6 +285,23 @@
 			$sidescroll.init();
 			
 		});
+		</script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+			  $('.glow-me').addGlow({
+			    radius: 20,
+			    textColor: '#e74c3c',
+			    haloColor: '#ecf0f1',
+			    duration: 500
+			  });
+			  $('.link-glow').addGlow({
+			  	radius: 50,
+			  	textColor: '#ecf0f1',
+			  	haloColor: '#ecf0f1',
+			  	duration: 1000
+			  });
+			});
 		</script>
 </body>
 </html>
